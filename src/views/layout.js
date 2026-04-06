@@ -1,5 +1,3 @@
-import { he } from "date-fns/locale";
-
 export function renderLayout() {
     const content = document.querySelector('#content');
 

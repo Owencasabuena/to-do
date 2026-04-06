@@ -1,5 +1,4 @@
-import { ProjectFactory } from '../src/models/project.js'
-import { TaskFactory } from '../src/models/task.js'
+import { ProjectFactory } from './models/project.js'
 
 let projects = [];
 

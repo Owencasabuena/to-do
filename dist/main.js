@@ -1,7 +1,7 @@
 /*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * ATTENTION: An "eval-source-map" devtool has been used.
  * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
  * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
@@ -10,76 +10,22 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/greeting.js"
-/*!*************************!*\
-  !*** ./src/greeting.js ***!
-  \*************************/
-(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   greeting: () => (/* binding */ greeting)\n/* harmony export */ });\n// greeting.js\nconst greeting = \"Hello, Odinite!\";\n\n//# sourceURL=webpack://to-do/./src/greeting.js?\n}");
-
-/***/ },
-
 /***/ "./src/index.js"
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _greeting_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./greeting.js */ \"./src/greeting.js\");\n// index.js\n\n\nconsole.log(_greeting_js__WEBPACK_IMPORTED_MODULE_0__.greeting);\n\n\n//# sourceURL=webpack://to-do/./src/index.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './views/layout'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './controller'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './views/projectsView'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\n\nfunction init() {\n    Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './views/layout'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();\n\n    if (Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './controller'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())().length === 0) {\n        Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './controller'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(\"Inbox\");\n        Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './controller'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(\"Personal\");\n    }\n\n    Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './views/projectsView'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './controller'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())());\n}\n\ninit();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMiLCJtYXBwaW5ncyI6Ijs7OztBQUE4QztBQUNTO0FBQ0Q7O0FBRXREO0FBQ0EsSUFBSSw2SUFBWTs7QUFFaEIsUUFBUSwySUFBVztBQUNuQixRQUFRLDJJQUFVO0FBQ2xCLFFBQVEsMklBQVU7QUFDbEI7O0FBRUEsSUFBSSxtSkFBYyxDQUFDLDJJQUFXO0FBQzlCOztBQUVBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdG8tZG8vLi9zcmMvaW5kZXguanM/Y2FlOSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyByZW5kZXJMYXlvdXQgfSBmcm9tIFwiLi92aWV3cy9sYXlvdXRcIjtcbmltcG9ydCB7IGFkZFByb2plY3QsIGdldFByb2plY3RzIH0gZnJvbSBcIi4vY29udHJvbGxlclwiO1xuaW1wb3J0IHsgcmVuZGVyUHJvamVjdHMgfSBmcm9tIFwiLi92aWV3cy9wcm9qZWN0c1ZpZXdcIjtcblxuZnVuY3Rpb24gaW5pdCgpIHtcbiAgICByZW5kZXJMYXlvdXQoKTtcblxuICAgIGlmIChnZXRQcm9qZWN0cygpLmxlbmd0aCA9PT0gMCkge1xuICAgICAgICBhZGRQcm9qZWN0KFwiSW5ib3hcIik7XG4gICAgICAgIGFkZFByb2plY3QoXCJQZXJzb25hbFwiKTtcbiAgICB9XG5cbiAgICByZW5kZXJQcm9qZWN0cyhnZXRQcm9qZWN0cygpKTtcbn1cblxuaW5pdCgpOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.js\n\n}");
 
 /***/ }
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		if (!(moduleId in __webpack_modules__)) {
-/******/ 			delete __webpack_module_cache__[moduleId];
-/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
-/******/ 			e.code = 'MODULE_NOT_FOUND';
-/******/ 			throw e;
-/******/ 		}
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -95,8 +41,9 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gr
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/index.js"](0,__webpack_exports__,__webpack_require__);
 /******/ 	
 /******/ })()
 ;

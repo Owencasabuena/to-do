@@ -1,0 +1,53 @@
+.sidebar__item {
+    position: relative; /* Crucial for positioning the menu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* The Three-Dot Button */
+.sidebar__item-options-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.2s ease;
+}
+
+/* THE HOVER TRICK: Show button when hovering the item */
+.sidebar__item:hover .sidebar__item-options-btn {
+    opacity: 1;
+}
+
+/* The Popup Menu */
+.sidebar__menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    z-index: 10;
+    flex-direction: column;
+}
+
+/* Show menu when active class is added */
+.sidebar__menu--active {
+    display: flex;
+}
+
+.sidebar__menu-btn {
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sidebar__menu-btn:hover {
+    background-color: #f0f0f0;
+}
