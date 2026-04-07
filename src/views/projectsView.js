@@ -6,7 +6,7 @@ export function renderProjects(projects) {
 
     const title = document.createElement('h1');
     title.classList.add('sidebar__title');
-    title.textContent = 'Do-It'
+    title.textContent = 'Pendings'
 
     const addBtn = document.createElement('button');
     addBtn.classList.add('sidebar__add-btn');
