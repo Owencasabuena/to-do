@@ -1,0 +1,23 @@
+#content {
+    display: grid;
+    grid-template-columns: .6fr 1fr 1fr;
+    grid-template-rows: .1fr 1fr;
+    height: 100vh;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 4;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: var(--bg-sidebar);
+    color: var(--text-secondary);
+}
+
+.main {
+    grid-area: 2 / 2 / 3 / 4;
+    background-color: var(--bg-main);
+}

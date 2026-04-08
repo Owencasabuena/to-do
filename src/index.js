@@ -2,8 +2,10 @@ import { renderLayout } from "./views/layout.js";
 import { addProject, getProjects } from "./controller.js";
 import { renderProjects } from "./views/projectsView.js";
 import { renderHeader } from "./views/headerView.js";
+import "./reset.css";
+import "./variable.css"
 import "./style.css";
-import "./reset.css"
+
 
 function init() {
     renderLayout();

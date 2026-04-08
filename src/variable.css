@@ -1,0 +1,7 @@
+:root {
+    --bg-main: oklch(18.717% 0.00202 286.054);
+    --bg-sidebar: oklch(23.863% 0.00246 248.184);
+    --accent-color: oklch(37.886% 0.10503 254.466);
+    --text-primary: oklch(82.878% 0.00598 154.555);
+    --text-secondary: oklch(81.629% 0.006 154.537);
+}
