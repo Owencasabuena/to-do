@@ -1,4 +1,4 @@
-import { addProject, deleteProject, editProject, getProjects } from "../controller.js";
+import { addProject, deleteProject, editProject, getProjects, setActiveProject, getActiveProject } from "../controller.js";
 
 export function renderProjects(projects) {
     const sidebar = document.querySelector('#sidebar-container');
@@ -23,9 +23,19 @@ export function renderProjects(projects) {
         const listItem = document.createElement('li');
         listItem.classList.add('sidebar__item-container');
 
+        if(project.id === getActiveProject()) {
+            listItem.classList.add('sidebar__item-container--active');
+        }
+
         const projectItem = document.createElement('button');
         projectItem.classList.add('sidebar__item');
         projectItem.textContent = project.getName();
+        projectItem.addEventListener('click', () => {
+            if (project.id === getActiveProject()) return;
+            setActiveProject(project.id);
+            renderProjects(getProjects());
+            //renderTasks();
+        });
 
         const projectItemEditBtn = document.createElement('button');
         projectItemEditBtn.classList.add('sidebar__item-edit-btn')

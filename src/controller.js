@@ -1,6 +1,7 @@
 import { ProjectFactory } from './models/project.js'
 
 let projects = [];
+let activeProjectId = 'inbox';
 
 export function addProject(name) {
     const project = ProjectFactory(name);
@@ -26,4 +27,13 @@ export function getProjects() {
 function getProjectById(id) {
     let project = projects.find((project) => project.id === id);
     return project;
+}
+
+export function setActiveProject(id) {
+    if(!getProjectById(id)) return;
+    activeProjectId = id;
+}
+
+export function getActiveProject() {
+    return activeProjectId;
 }

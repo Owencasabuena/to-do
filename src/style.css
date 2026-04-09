@@ -67,17 +67,28 @@
     color: var(--text-secondary);
     text-align: start;
     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.sidebar__item-container--active {
+    background-color: var(--accent-color);
+    border-radius: 25px;
+    color: var(--text-primary);
+}
+
+.sidebar__item-container--active .sidebar__item {
     font-weight: 900;
+    color: var(--text-primary);
 }
 
 .sidebar__item-container:hover {
-    background-color: var(--accent-color);
+    background-color: oklch(33.949% 0.00449 248.159 / 0.603);
     border-radius: 25px;
 }
 
 .sidebar__item-container:hover .sidebar__item-edit-btn {
     opacity: 1;
-    color: var(--text-primary); /* You can even change its color here */
+    color: var(--text-primary); 
 }
 
 .sidebar__item {
