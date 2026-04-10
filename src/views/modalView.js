@@ -1,15 +1,35 @@
-function renderProjectRenameForm() {
+export function renderProjectRenameForm(project) {
+    const dialog = document.createElement('dialog');
+    dialog.classList.add('project-modal');
+    
+
+    dialog.append(title,)
+    document.body.append(dialog);
+
+    dialog.showModal();
+
+    cancelBtn.addEventListener('click', () => {
+        dialog.close();
+    });
+
+    saveBtn.addEventListener('submit', (e) => {
+        // extract form 
+        // trim it then validate
+        // if error show message
+        // if not onSave
+    });
+
+    dialog.addEventListener('close', () => dialog.remove());
+}
+
+export function renderProjectDeleteConfirm() {
 
 }
 
-function renderProjectDeleteConfirm() {
+export function renderTaskDeleteConfirm() {
 
 }
 
-function renderTaskDeleteConfirm() {
-
-}
-
-function renderTaskEditForm() {
+export function renderTaskEditForm() {
 
 }
