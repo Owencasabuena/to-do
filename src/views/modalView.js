@@ -33,3 +33,7 @@ export function renderTaskDeleteConfirm() {
 export function renderTaskEditForm() {
 
 }
+
+export function renderAddTaskForm() {
+    
+}
