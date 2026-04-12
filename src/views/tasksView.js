@@ -2,9 +2,9 @@ import { TaskFactory } from "../models/task.js";
 import { ProjectFactory } from "../models/project.js";
 
 export function renderTasks(project) {
-    const main = document.querySelector('#main');
+    const main = document.querySelector('#tasks-container');
     main.innerHTML = '';
-
+    
     const title = document.createElement('h1');
     title.classList.add('main__title');
     title.textContent = project.getName();
@@ -24,7 +24,7 @@ export function renderTasks(project) {
         editTaskBtn.innerHTML = '<i class="fa-regular fa-pen-to-square fa-2xs"></i>'
         editTaskBtn.addEventListener('click', () => {
             // run modal
-            // run deleteTask(task.id)
+            // run editTask(task.id, newDetails)
             // run renderTask(project.id)
         });
         
@@ -33,13 +33,27 @@ export function renderTasks(project) {
         deleteTaskBtn.innerHTML = '<i class="fa-solid fa-trash fa-2xs"></i>';
         deleteTaskBtn.addEventListener('click', () => {
             // run modal
-            // run editTask(task.id, newDetails)
+            // run deleteTask(task.id)
             // run renderTask(project.id)
         });
 
         taskItem.append(taskName, editTaskBtn, deleteTaskBtn);
-        taskList.append(taskName);
+        taskList.append(taskItem);
     });
+
+    const addTaskRow = document.createElement('li');
+    addTaskRow.classList.add('main__add-task-container');
+
+    const addTaskBtn = document.createElement('button');
+    addTaskBtn.classList.add('main__add-task-btn');
+    addTaskBtn.innerHTML = '<i class="fa-solid fa-circle-plus"></i> Add Task';
+    addTaskBtn.addEventListener('click', () => {
+        // run renderAddTaskForm();
+        // run renderTask(project.id)
+    });
+
+    addTaskRow.append(addTaskBtn);
+    taskList.append(addTaskRow);
 
     main.append(title, taskList);
 }

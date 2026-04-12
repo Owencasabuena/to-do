@@ -1,4 +1,5 @@
 import { addProject, deleteProject, editProject, getProjects, setActiveProject, getActiveProject } from "../controller.js";
+import { renderTasks } from "./tasksView.js";
 
 export function renderProjects(projects) {
     const sidebar = document.querySelector('#sidebar-container');
@@ -34,7 +35,7 @@ export function renderProjects(projects) {
             if (project.id === getActiveProject()) return;
             setActiveProject(project.id);
             renderProjects(getProjects());
-            //renderTasks();
+            renderTasks(project);
         });
 
         const projectItemEditBtn = document.createElement('button');
