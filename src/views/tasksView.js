@@ -24,8 +24,9 @@ export function renderTasks(project) {
         editTaskBtn.innerHTML = '<i class="fa-regular fa-pen-to-square fa-2xs"></i>'
         editTaskBtn.addEventListener('click', () => {
             // run modal
-            // run editTask(task.id, newDetails)
-            // run renderTask(project.id)
+            let newDetails = //todo
+            project.editTask(task.id, newDetails);
+            renderTasks(project);
         });
         
         const deleteTaskBtn = document.createElement('button');
@@ -33,8 +34,8 @@ export function renderTasks(project) {
         deleteTaskBtn.innerHTML = '<i class="fa-solid fa-trash fa-2xs"></i>';
         deleteTaskBtn.addEventListener('click', () => {
             // run modal
-            // run deleteTask(task.id)
-            // run renderTask(project.id)
+            project.deleteTask(task.id);
+            renderTasks(project);
         });
 
         taskItem.append(taskName, editTaskBtn, deleteTaskBtn);
@@ -49,7 +50,7 @@ export function renderTasks(project) {
     addTaskBtn.innerHTML = '<i class="fa-solid fa-circle-plus"></i> Add Task';
     addTaskBtn.addEventListener('click', () => {
         // run renderAddTaskForm();
-        // run renderTask(project.id)
+        renderTasks(project);
     });
 
     addTaskRow.append(addTaskBtn);
