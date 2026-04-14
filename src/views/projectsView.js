@@ -63,7 +63,7 @@ export function renderProjects(projects) {
             renameBtn.innerHTML = '<i class="fa-solid fa-pencil fa-2xs"></i> Rename';
             renameBtn.addEventListener('click', () => {
                 // let newName = open modal for rename
-                // run editProject(project.id, newName);
+                editProject(project.id, newName);
             });
 
             const deleteBtn = document.createElement('button');
@@ -71,7 +71,7 @@ export function renderProjects(projects) {
             deleteBtn.innerHTML = '<i class="fa-regular fa-trash-can fa-2xs"></i> Delete';
             deleteBtn.addEventListener('click', () => {
                 // open confirmation modal for delete
-                // if true run deleteProject(project.id);
+                deleteProject(project.id);
             });
 
             menu.append(renameBtn, deleteBtn);
