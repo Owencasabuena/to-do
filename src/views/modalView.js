@@ -19,6 +19,8 @@ export function renderProjectRenameForm(project) {
         // if not onSave
     });
 
+    // whattt
+
     dialog.addEventListener('close', () => dialog.remove());
 }
 
